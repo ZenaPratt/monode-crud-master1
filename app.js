@@ -46,17 +46,11 @@ app.configure('development', function(){
 
 
 // ROUTE HANDLING
-
-app.get('/', function(req, res) {
-    res.render('index.html', { layout : false , title: 'Teen Xone' });
-})
-
-
 app.get('/', function(req, res){
 
     var listData = function(err, collection) {
         collection.find().toArray(function(err, results) {
-            res.render('tell_us.html', { layout : false , 'title' : 'Teen Xone', 'results' : results });
+            res.render('index.html', { layout : false , 'title' : 'Teen Xone', 'results' : results });
         });
     }
 
@@ -74,7 +68,7 @@ app.get('/add_record', function(req, res){
 
 app.post('/save_record', function(req, res){
     console.log(req.body);
-    var data = {'full_name' : req.body.full_name , 'profession' : req.body.profession};
+    var data = {'full_name' : req.body.full_name , 'profession' : req.body.profession, 'email' : req.body.email, 'password' : req.body.pwd};
     var insertData = function(err, collection) {
         collection.insert(data);
     }

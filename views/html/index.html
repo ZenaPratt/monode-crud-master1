@@ -85,7 +85,7 @@
             <div class="row-fluid">
                 <h2>Artist List</h2>
                 <p>
-                    Manage record : add, update, delete. ABOUT PAGE
+                    Manage record : add, update, delete.
                 </p>
             </div>
             <div class="row-fluid">
@@ -95,6 +95,7 @@
                         <tr>
                             <th>Favorite Artist Name</th>
                             <th>Profession (Singer/Actor)</th>
+                            <th>Email</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -103,6 +104,7 @@
                         <tr>
                             <td>{{this.full_name}}</td>
                             <td>{{this.profession}}</td>
+                            <td>{{this.email}}</td>
                             <td>
                                 <a href="edit_record/{{this._id}}" class="btn btn-warning"><i class="icon-edit icon-white"></i> Update</a>
                                 <a href="delete_record/{{this._id}}" class="btn btn-danger" onclick="return confirm('Are you sure? There is no turning back!!')"><i class="icon-trash icon-white"></i> Delete</a>
