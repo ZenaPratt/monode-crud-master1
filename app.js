@@ -47,10 +47,10 @@ app.configure('development', function(){
 
 // ROUTE HANDLING
 
-app.get('/html/', function(req, res) {
+app.get('/html', function(req, res) {
     res.render('home.html', { layout : false , title: 'Home' });
 });
-app.get('/html/', function(req, res) {
+app.get('/html', function(req, res) {
     res.render('about.html', { layout : false , title: 'About' });
 });
 
