@@ -47,11 +47,11 @@ app.configure('development', function(){
 
 // ROUTE HANDLING
 
-app.get('/views/html/', function(req, res) {
-    res.render('home.html', { title: 'Home' });
+app.get('/html/', function(req, res) {
+    res.render('home.html', { layout : false , title: 'Home' });
 });
-app.get('/views/html/', function(req, res) {
-    res.render('about.html', { title: 'Home' });
+app.get('/html/', function(req, res) {
+    res.render('about.html', { layout : false , title: 'About' });
 });
 
 app.get('/', function(req, res){
