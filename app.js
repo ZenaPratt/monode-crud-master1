@@ -47,7 +47,7 @@ app.configure('development', function(){
 
 // ROUTE HANDLING
 
-app.get('/views/html', function(req, res) {
+app.get('/views/html/', function(req, res) {
     res.render('home.html', { title: 'Home' });
 });
 
