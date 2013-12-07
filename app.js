@@ -46,6 +46,11 @@ app.configure('development', function(){
 
 
 // ROUTE HANDLING
+
+app.get('/', function(req, res) {
+    res.render('home', { title: 'Home' });
+});
+
 app.get('/', function(req, res){
 
     var listData = function(err, collection) {
