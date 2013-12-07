@@ -48,7 +48,7 @@ app.configure('development', function(){
 // ROUTE HANDLING
 
 app.get('/', function(req, res) {
-    res.render('home.html', { layout : false , title: 'Home' });
+    res.render('index.html', { layout : false , title: 'Home' });
 });
 app.get('/', function(req, res) {
     res.render('about.html', { layout : false , title: 'About' });
@@ -58,7 +58,7 @@ app.get('/', function(req, res){
 
     var listData = function(err, collection) {
         collection.find().toArray(function(err, results) {
-            res.render('index.html', { layout : false , 'title' : 'Teen Xone', 'results' : results });
+            res.render('tell_us.html', { layout : false , 'title' : 'Teen Xone', 'results' : results });
         });
     }
 
