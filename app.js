@@ -48,10 +48,10 @@ app.configure('development', function(){
 // ROUTE HANDLING
 
 app.get('/', function(req, res) {
-    res.render('views/html/home.html', { layout : false , title: 'Home' });
+    res.render('html/home.html', { layout : false , title: 'Home' });
 });
 app.get('/', function(req, res) {
-    res.render('views/html/about.html', { layout : false , title: 'About' });
+    res.render('/html/about.html', { layout : false , title: 'About' });
 });
 
 app.get('/', function(req, res){
