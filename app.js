@@ -48,11 +48,9 @@ app.configure('development', function(){
 // ROUTE HANDLING
 
 app.get('/', function(req, res) {
-    res.render('index.html', { layout : false , title: 'Home' });
-});
-app.get('/', function(req, res) {
-    res.render('about.html', { layout : false , title: 'About' });
-});
+    res.render('index.html', { layout : false , title: 'Teen Xone' });
+})
+
 
 app.get('/', function(req, res){
 
