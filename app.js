@@ -50,6 +50,9 @@ app.configure('development', function(){
 app.get('/views/html/', function(req, res) {
     res.render('home.html', { title: 'Home' });
 });
+app.get('/views/html/', function(req, res) {
+    res.render('about.html', { title: 'Home' });
+});
 
 app.get('/', function(req, res){
 
