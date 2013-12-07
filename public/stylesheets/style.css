@@ -1,0 +1,14 @@
+body {
+  padding: 50px;
+  	font-family: 14px "Palatino Linotype", Palatino, Georgia, Garamond, serif;
+	background: -linear-gradient(left top, #66004C 35%, #FFCCFF 90%);
+	background: -o-linear-gradient(left top, #66004C 35%, #FFCCFF 90%);
+	background: -moz-linear-gradient(left top, #66004C 35%, #FFCCFF 90%);
+	background: -webkit-linear-gradient(left top, #66004C 35%, #FFCCFF 90%);
+	background: -ms-linear-gradient(left top, #66004C 35%, #FFCCFF 90%);
+	background: -webkit-gradient(linear,left top,right bottom,color-stop(0.35, #66004C),color-stop(0.9, #FFCCFF));
+}
+
+a {
+  color: #00B7FF;
+}
