@@ -46,7 +46,7 @@ app.configure('development', function(){
 
 
 // ROUTE HANDLING
-app.get('/', function(req, res) {
+app.get('#', function(req, res) {
   res.render('index',{home:"active",session: req.session
   });
 });
